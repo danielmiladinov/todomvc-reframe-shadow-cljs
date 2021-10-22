@@ -10,6 +10,7 @@
 
 (defn dev-setup []
   (when config/debug?
+    (enable-console-print!)
     (println "dev mode")))
 
 (defn ^:dev/after-load mount-root []
